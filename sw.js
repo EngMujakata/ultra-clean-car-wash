@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ultra-clean-car-wash-v1';
+const CACHE_NAME = 'ultra-clean-car-wash-v2';
 
 // Files to cache
 const urlsToCache = [
