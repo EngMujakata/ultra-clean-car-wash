@@ -1,6 +1,6 @@
 {
   "name": "Ultra Clean Car Wash Chatbot Dashboard",
-  "short_name": "Silkwood App",
+  "short_name": "Ultra Clean",
   "description": "Dashboard for managing Ultra Clean Car Wash WhatsApp chatbot conversations, orders, and product catalog",
   "start_url": "index.html",
   "display": "standalone",
