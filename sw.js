@@ -1,4 +1,4 @@
-const CACHE_NAME = 'silkwood-manufacturing-dashboard-v1';
+const CACHE_NAME = 'ultra-clean-car-wash-v1';
 
 // Files to cache
 const urlsToCache = [
@@ -12,7 +12,7 @@ const urlsToCache = [
 
 // Install event - cache assets
 self.addEventListener('install', event => {
-  console.log('Service Worker installing for Silkwood Manufacturing...');
+  console.log('Service Worker installing for Ultra Clean Car Wash...');
   
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -32,7 +32,7 @@ self.addEventListener('install', event => {
 
 // Activate event - clean up old caches
 self.addEventListener('activate', event => {
-  console.log('Service Worker activating for Silkwood Manufacturing...');
+  console.log('Service Worker activating for Ultra Clean Car Wash...');
   
   event.waitUntil(
     caches.keys().then(cacheNames => {
@@ -125,11 +125,11 @@ self.addEventListener('fetch', event => {
 // Handle background sync for offline actions (if needed)
 self.addEventListener('sync', event => {
   if (event.tag === 'sync-orders') {
-    console.log('Syncing orders in background for Silkwood');
+    console.log('Syncing orders in background for Ultra Clean Car Wash');
     // Implement background sync logic here if needed
   }
   if (event.tag === 'sync-catalog') {
-    console.log('Syncing catalog in background for Silkwood');
+    console.log('Syncing catalog in background for Ultra Clean Car Wash');
     // Implement background sync logic here if needed
   }
 });
@@ -137,7 +137,7 @@ self.addEventListener('sync', event => {
 // Handle push notifications (if needed)
 self.addEventListener('push', event => {
   const options = {
-    body: event.data ? event.data.text() : 'New update from Silkwood Manufacturing',
+    body: event.data ? event.data.text() : 'New update from Ultra Clean Car Wash',
     icon: 'logo.png',
     badge: 'logo.png',
     vibrate: [200, 100, 200],
@@ -152,7 +152,7 @@ self.addEventListener('push', event => {
   };
   
   event.waitUntil(
-    self.registration.showNotification('Silkwood Manufacturing Dashboard', options)
+    self.registration.showNotification('Ultra Clean Car Wash Dashboard', options)
   );
 });
 
